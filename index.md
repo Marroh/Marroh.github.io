@@ -35,7 +35,7 @@
 
 - 三维重建相关项目
 
-  基于三维重建的路径规划	[项目代码](https://marroh.github.io/)
+  基于三维重建的路径规划	[项目代码](https://github.com/Marroh/SFM-based-path-planning)
 
      > 用**SFM方法**进行**增量式**的三维重建，把三维重建后的点云投影到地面，得到一个二维的障碍物图，在此基础上用A^*^算法进行路径规划
 
@@ -46,7 +46,7 @@
 
   - 目标跟踪项目
 
-    基于分割的行人检测	[项目代码](https://marroh.github.io/)
+    基于分割的行人检测	[项目代码](https://github.com/Marroh/Segmentation-based-pedestrian-detection)
 
     >使用**Unet**，在Cityscape数据集上训练，将最终的模型用于检测和跟踪行人。
     >
