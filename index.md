@@ -54,7 +54,7 @@
 
   - 语义分割项目
 
-    医学图像语义分割	[项目代码](https://marroh.github.io/)
+    医学图像语义分割	[项目代码](https://github.com/Marroh/Medical-image-segmentation)
 
     > ***这是一个未完成的项目***
     >
@@ -66,6 +66,6 @@
  
 - 传统机器学习相关项目
 
-  飞行器单目姿态估计
+  飞行器单目姿态估计 [项目代码](https://github.com/Marroh/Monocular-Camera-Pose-Estimation)
 
   >单目姿态估计其实就是一个多输出回归问题，提取了飞行器图像中的SIFT特征，聚类成11个类，组合起来即可得到128*11=1408维特征。使用**随机森林**作为回归器，输出代表飞行器坐标系相对于单目相机坐标系的**位置和旋转角度**的7维数据。
