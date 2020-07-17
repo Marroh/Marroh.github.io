@@ -3,7 +3,7 @@
 <table border="0">
   <tr>    
     <td width="25%">
-      <img src="/profile.jpg" width="100%">
+      <img src="/picture.jpg" width="100%">
     </td>
     <td width="75%">
       <h2>马昊</h2>
