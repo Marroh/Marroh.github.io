@@ -41,6 +41,27 @@ window.PUBLICATIONS = [
   "bib": "@inproceedings{amat2026,\n  title={AMAT: Automated Multi-Agent Topology Design via Reinforcement Learning},\n  author={Shijie Zheng and Zhiqiang Pu and Hao Ma and Tianyi Hu and Xiaolin Ai and Yi Pan},\n  booktitle={Third Conference on Language Modeling},\n  year={2026},\n  url={https://proceedings.colm.cc/paper_files/paper/2026/hash/0fb98d483fa580e0354bcdd3a003a3f3-Abstract-Conference.html}\n}"
 },
  {year:'2026',key:'refiner',name:'Online Refiner',tag:'DYNAMIC CONSTRAINTS',title:'Enhancing Reinforcement Learning Fine-Tuning with an Online Refiner',authors:['Hao Ma','Zhiqiang Pu','Yang Liu','Xiaolin Ai'],venue:'arXiv preprint · 2026',paper:'https://arxiv.org/abs/2603.18088',abstract:'Dynamic constraints adapt to the quality of a model’s outputs during reinforcement learning fine-tuning. A reference model acts as an online refiner, minimally correcting degenerate outputs; a supervised loss then guides the policy toward the refined responses. Experiments cover dialogue and code generation.',bib:'@misc{ma2026enhancing,\n  title={Enhancing Reinforcement Learning Fine-Tuning with an Online Refiner},\n  author={Hao Ma and Zhiqiang Pu and Yang Liu and Xiaolin Ai},\n  year={2026},\n  eprint={2603.18088},\n  archivePrefix={arXiv},\n  url={https://arxiv.org/abs/2603.18088}\n}'},
+{
+  "year": "2025",
+  "key": "taceleven",
+  "name": "TacEleven",
+  "title": "TacEleven: generative tactic discovery for football open play",
+  "authors": [
+    "Siyao Zhao",
+    "Hao Ma",
+    "Zhiqiang Pu",
+    "Jingjing Huang",
+    "Yi Pan",
+    "Shijie Wang",
+    "Zhi Ming"
+  ],
+  "venue": "arXiv preprint · 2025",
+  "contribution": "Siyao Zhao and Hao Ma contributed equally. Hao Ma led the project.",
+  "paper": "https://arxiv.org/abs/2511.13326",
+  "project": "https://casia-taceleven.github.io/TacEleven/",
+  "abstract": "Developed with experts from AJ Auxerre, TacEleven generates alternative attacking sequences from the same passage of play. A tactical critic evaluates how well each sequence fits a coach’s instruction.",
+  "bib": "@misc{zhao2025taceleven,\n  title={TacEleven: generative tactic discovery for football open play},\n  author={Siyao Zhao and Hao Ma and Zhiqiang Pu and Jingjing Huang and Yi Pan and Shijie Wang and Zhi Ming},\n  year={2025},\n  eprint={2511.13326},\n  archivePrefix={arXiv}\n}"
+},
  {year:'2025',key:'vgepf',name:'V-GEPF',tag:'VISION × POLICY ALIGNMENT',title:'Vision-Based Generic Potential Function for Policy Alignment in Multi-Agent Reinforcement Learning',authors:['Hao Ma','Shijie Wang','Zhiqiang Pu','Siyao Zhao','Xiaolin Ai'],venue:'AAAI · 2025',paper:'https://ojs.aaai.org/index.php/AAAI/article/view/34123',code:'https://github.com/Marroh/V-GEPF-official-code',abstract:'V-GEPF uses a vision-language model as a generic potential function for reward shaping. A higher-level module selects skills using instructions, video replays, and training records. The approach preserves the optimal policy and is evaluated in Google Research Football.',bib:'@inproceedings{ma2025vision,\n  title={Vision-Based Generic Potential Function for Policy Alignment in Multi-Agent Reinforcement Learning},\n  author={Ma, Hao and Wang, Shijie and Pu, Zhiqiang and Zhao, Siyao and Ai, Xiaolin},\n  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},\n  year={2025},\n  url={https://ojs.aaai.org/index.php/AAAI/article/view/34123}\n}'},
 {
   "key": "ctd",
