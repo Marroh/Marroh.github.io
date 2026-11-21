@@ -11,10 +11,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Render project overview
         run: |
-          curl -fsSL --retry 3 https://casia-taceleven.github.io/TacEleven/static/images/overflow.pdf -o /tmp/taceleven.pdf
-          sudo apt-get install -y poppler-utils webp
-          pdftoppm -singlefile -f 1 -scale-to 960 -png /tmp/taceleven.pdf /tmp/taceleven
-          cwebp -quiet -q 88 /tmp/taceleven.png -o assets/figures/taceleven.webp
+          curl -fsSL --retry 3 https://casia-taceleven.github.io/TacEleven/static/images/overflow.jpg -o /tmp/taceleven.jpg
+          python -m pip install Pillow --quiet
+          python - <<'PY'
+          from PIL import Image
+          Image.MAX_IMAGE_PIXELS = 200_000_000
+          with Image.open('/tmp/taceleven.jpg') as img:
+              img.draft('RGB', (960, 650))
+              img.thumbnail((960, 650))
+              img.save('assets/figures/taceleven.webp', quality=88)
+          PY
           git config user.name github-actions
           git config user.email github-actions@users.noreply.github.com
           git add assets/figures/taceleven.webp
