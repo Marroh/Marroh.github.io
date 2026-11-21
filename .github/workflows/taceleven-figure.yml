@@ -1,0 +1,22 @@
+name: Prepare TacEleven figure
+on:
+  push:
+    paths: ['.github/workflows/taceleven-figure.yml']
+permissions:
+  contents: write
+jobs:
+  figure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Render project overview
+        run: |
+          curl -fsSL --retry 3 https://casia-taceleven.github.io/TacEleven/static/images/overflow.pdf -o /tmp/taceleven.pdf
+          sudo apt-get install -y poppler-utils webp
+          pdftoppm -singlefile -f 1 -scale-to 960 -png /tmp/taceleven.pdf /tmp/taceleven
+          cwebp -quiet -q 88 /tmp/taceleven.png -o assets/figures/taceleven.webp
+          git config user.name github-actions
+          git config user.email github-actions@users.noreply.github.com
+          git add assets/figures/taceleven.webp
+          git commit -m "Add TacEleven overview from the project page"
+          git push
